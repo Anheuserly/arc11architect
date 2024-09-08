@@ -10,94 +10,12 @@
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="./css/nav-panel.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script src="./js/main.js" defer></script>
-    <style>
-        /* Navigation Panel */
-        .nav-panel {
-            position: fixed;
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: 350px;
-            background: #fff;
-            box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-            padding: 20px;
-            box-sizing: border-box;
-            z-index: 1000;
-            overflow-y: auto;
-        }
-
-        .nav-panel.active {
-            transform: translateX(0);
-        }
-
-        .nav-panel h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .nav-panel p {
-            margin: 10px 0;
-        }
-
-        .nav-panel .close-btn {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            font-size: 2rem;
-            cursor: pointer;
-            color: #333;
-        }
-
-        .nav-panel .social-links {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        .nav-panel .social-links a {
-            margin-right: 15px;
-        }
-
-        .nav-panel .social-links img {
-            width: 30px;
-            height: 30px;
-        }
-
-        .nav-panel .contact-details {
-            margin-bottom: 20px;
-        }
-
-        .nav-panel .contact-form label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        .nav-panel .contact-form input, 
-        .nav-panel .contact-form textarea {
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .nav-panel .contact-form button {
-            padding: 10px 15px;
-            background: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .nav-panel .contact-form button:hover {
-            background: #0056b3;
-        }
-    </style>
+    <script src="./js/portfolio.js" defer></script>
+    <script src="./js/" defer></script>
+    
 </head>
 <body>
     <header>
@@ -151,21 +69,7 @@
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form action="/submit-form" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+       
 
         <section id="location" class="location-section">
             <h2>Our Location</h2>
@@ -190,25 +94,22 @@
             <h2>Contact Us</h2>
             <div class="contact-details">
                 <h3>Our Office</h3>
-                <p><strong>Head Office:</strong></p>
-                <p>D-21 Chattarpur Hills, II Floor,<br> Ambedkar Colony, New Delhi, Delhi 110030</p>
-                <p><strong>Phone:</strong> +91 98765 43210</p>
-                <p><strong>Email:</strong> info@arcelevenarchitect.com</p>
+                <div class="contact-item">
+                    <h4>Head Office</h4>
+                    <p>D-21 Chattarpur Hills, II Floor,<br> Ambedkar Colony,<br> New Delhi, Delhi 110030</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Phone</h4>
+                    <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p><a href="mailto:info@arcelevenarchitect.com">info@arcelevenarchitect.com</a></p>
+                </div>
             </div>
-            <div class="contact-form">
-                <form action="mailto:info@arcelevenarchitect.com" method="post" enctype="text/plain">
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="contact">Contact Number:</label>
-                    <input type="tel" id="contact" name="contact" required>
-
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <button type="submit">Send Inquiry</button>
-                </form>
-            </div>
+        </section>
+        
+            
         </section>
     </main>
 
@@ -228,17 +129,7 @@
     <div class="nav-panel" id="navPanel">
         <span class="close-btn" id="closeNav">×</span>
         <h2>Navigation</h2>
-        <p><a href="#home">Home</a></p>
-        <p><a href="./arcelevenarchitect/about.html">About</a></p>
-        <p><a href="./arcelevenarchitect/services.html">Services</a></p>
-        <p><a href="./arcelevenarchitect/projects.html">Projects</a></p>
-        <p><a href="./arcelevenarchitect/portfolio.html">Portfolio</a></p>
-        <p><a href="./arcelevenarchitect/clients.html">Clients</a></p>
-        <div class="social-links">
-            <a href="https://www.facebook.com/arcelevenarchitect" target="_blank" aria-label="Facebook"><img src="./icons/facebook.png" alt="Facebook"></a>
-            <a href="https://twitter.com/arcelevenarchitect" target="_blank" aria-label="Twitter"><img src="./icons/twitter.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com/arcelevenarchitect" target="_blank" aria-label="Instagram"><img src="./icons/instagram.png" alt="Instagram"></a>
-        </div>
+        
         <div class="contact-details">
             <h3>Contact Us</h3>
             <p><strong>Phone:</strong> +91 98765 43210</p>
@@ -261,18 +152,6 @@
         </div>
     </div>
 
-    <script>
-        const openNavBtn = document.querySelector('.open-nav-btn');
-        const navPanel = document.getElementById('navPanel');
-        const closeNavBtn = document.getElementById('closeNav');
-
-        openNavBtn.addEventListener('click', () => {
-            navPanel.classList.add('active');
-        });
-
-        closeNavBtn.addEventListener('click', () => {
-            navPanel.classList.remove('active');
-        });
-    </script>
+    
 </body>
 </html>
