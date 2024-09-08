@@ -16,8 +16,9 @@ body {
 header {
     padding: 20px;
     text-align: center;
-    background: #333;
-    color: white;
+    background: url('../background/—Pngtree—modern\ liquid\ gradient\ colors\ abstract_1594209.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(165, 17, 17);
     position: relative; /* Needed for absolute positioning of the logo */
     text-align: center; /* Center the rest of the header content */
 }
@@ -301,7 +302,8 @@ aside ul li a:hover {
 
 /* Footer */
 footer {
-    background: #333;
+    background: url('../background/—Pngtree—red\ and\ gold\ wave\ gradient_15591061.jpg') no-repeat center center;
+    background-size: cover;
     color: white;
     padding: 20px;
     text-align: center;
