@@ -117,3 +117,22 @@ function animateValue(obj, start, end, duration) {
 // Usage example (you'll need to add elements with these IDs in your HTML):
 // document.getElementById("projectsCount").innerHTML = "0";
 // animateValue(document.getElementById("projectsCount"), 0, 100, 2000);
+const openNavBtn = document.querySelector('.open-nav-btn');
+        const navPanel = document.getElementById('navPanel');
+        const closeNavBtn = document.getElementById('closeNav');
+
+        openNavBtn.addEventListener('click', () => {
+            navPanel.classList.add('active');
+        });
+
+        closeNavBtn.addEventListener('click', () => {
+            navPanel.classList.remove('active');
+        });
+        document.getElementById('closeNav').addEventListener('click', function() {
+            document.getElementById('navPanel').classList.remove('active');
+        });
+        
+        // Example to open the panel (you may need to add this to an appropriate event or button)
+        function openNav() {
+            document.getElementById('navPanel').classList.add('active');
+        }
