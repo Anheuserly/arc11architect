@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArceEleven Architect - Portfolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <script src="/js/main.js" defer></script>
+    <script src="/js/portfolio.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>ArceEleven Architect</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="portfolio">
+            <h2>Our Portfolio</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="urban">Urban Planning</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="residential">
+                    <img src="/images/portfolio/residential-1.jpg" alt="Modern House">
+                    <div class="portfolio-overlay">
+                        <h3>Modern House</h3>
+                        <p>A contemporary residential project featuring open spaces and sustainable materials.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="commercial">
+                    <img src="/images/portfolio/commercial-1.jpg" alt="Office Complex">
+                    <div class="portfolio-overlay">
+                        <h3>Office Complex</h3>
+                        <p>A state-of-the-art office building designed for productivity and collaboration.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="urban">
+                    <img src="/images/portfolio/urban-1.jpg" alt="City Park">
+                    <div class="portfolio-overlay">
+                        <h3>City Park</h3>
+                        <p>An urban green space designed to enhance community well-being and environmental sustainability.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="residential">
+                    <img src="/images/portfolio/residential-2.jpg" alt="Luxury Apartment">
+                    <div class="portfolio-overlay">
+                        <h3>Luxury Apartment</h3>
+                        <p>A high-end residential complex with panoramic views and premium amenities.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="commercial">
+                    <img src="/images/portfolio/commercial-2.jpg" alt="Shopping Mall">
+                    <div class="portfolio-overlay">
+                        <h3>Shopping Mall</h3>
+                        <p>A modern retail space designed for an optimal shopping experience.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="urban">
+                    <img src="/images/portfolio/urban-2.jpg" alt="Transit Hub">
+                    <div class="portfolio-overlay">
+                        <h3>Transit Hub</h3>
+                        <p>An integrated transportation center designed to improve urban mobility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ArceEleven Architect. All rights reserved.</p>
+        <nav aria-label="Footer Navigation">
+            <a href="/privacy-policy.html">Privacy Policy</a> |
+            <a href="/terms-of-service.html">Terms of Service</a>
+        </nav>
+        <div class="social-links">
+            <a href="https://facebook.com/arcelevenarchitect" aria-label="Facebook">
+                <img src="/images/facebook-icon.svg" alt="" width="24" height="24">
+            </a>
+            <a href="https://instagram.com/arcelevenarchitect" aria-label="Instagram">
+                <img src="/images/instagram-icon.svg" alt="" width="24" height="24">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
