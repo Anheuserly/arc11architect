@@ -1,88 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARC 11 ARCHITECT</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ArceEleven Architect - Professional architectural services">
+    <meta name="keywords" content="architecture, design, construction, portfolio">
+    <title>ArceEleven Architect</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <h1>ARC 11 ARCHITECT</h1>
-      <p class="subtitle">Designing Your Dreams</p>
-    </div>
-    <div class="topnav">
-      <a class="active" href="#home">Home</a>
-     
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-       <a href="#news">News</a>
-    </div>
-    
-   
-  </header>
+    <header>
+        <h1>Welcome to ArceEleven Architect</h1>
+        <img src="./logo/ARC 11 LOGO (2024_05_17 16_03_50 UTC).png" alt="ArceEleven Architect Logo" width="150" height="50" aria-label="ArceEleven Architect Logo">
+    </header>
 
-  <section id="home" class="hero" style="background-image: url('architecture-background.jpg');">
-    <h2>Welcome to ARC 11 ARCHITECT</h2>
-    <button class="cta-button" onclick="scrollToSection('contact')">Contact Us</button>
-  </section>
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="/index.htm">Home</a></li>
+            <li><a href="../arcelevenarchitect/about.html">About</a></li>
+            <li><a href="../arcelevenarchitect/services.html">Services</a></li>
+            <li><a href="../arcelevenarchitect/projects.html">Projects</a></li>
+            <li><a href="../arcelevenarchitect/portfolio.html">Portfolio</a></li>
+            <li><a href="../arcelevenarchitect/clients.html">Clients</a></li>
+        </ul>
+    </nav>
 
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>ARC 11 ARCHITECT is led by Ar. Shashank Saini, a visionary in the field of architecture...</p>
-  </section>
+    <main>
+        <section id="hero">
+            <video autoplay loop muted playsinline>
+                <source src="./video/COMBINED-002.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <h2>Innovative Architectural Solutions</h2>
+                <p>Transforming spaces, creating experiences</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </section>
 
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-item">
-      <h3>Residential Design</h3>
-      <p>Crafting personalized living spaces.</p>
-      <button class="service-button">Learn More</button>
-    </div>
-    <div class="service-item">
-      <h3>Commercial Design</h3>
-      <p>Innovative and functional commercial spaces.</p>
-      <button class="service-button">Learn More</button>
-    </div>
-  </section>
+        <section id="featured-projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <figure>
+                    <img src="/images/project1.jpg" alt="Modern Office Building" loading="lazy">
+                    <figcaption>Modern Office Complex</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/project2.jpg" alt="Sustainable Home" loading="lazy">
+                    <figcaption>Eco-Friendly Residence</figcaption>
+                </figure>
+            </div>
+        </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form id="contact-form">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      
-      <button type="submit">Send Message</button>
-    </form>
-    <div class="contact-info">
-      <p>Email: <a href="mailto:archelevenarchitect@gmail.com">archelevenarchitect@gmail.com</a></p>
-    </div>
-  </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Architectural Design</li>
+                <li>Interior Design</li>
+                <li>Urban Planning</li>
+                <li>3D Visualization</li>
+            </ul>
+        </section>
 
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2024 ARC 11 ARCHITECT. All rights reserved.</p>
-      <div class="social-icons">
-        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-      </div>
-      <div class="quick-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="/submit-form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-  <script src="script.js"></script>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Latest News</h3>
+        <ul>
+            <li><a href="/news/article1.html">ArceEleven wins Design Award</a></li>
+            <li><a href="/news/article2.html">New Sustainable Project Launched</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>&copy; 2023 ArceEleven Architect. All rights reserved.</p>
+        <nav aria-label="Footer Navigation">
+            <a href="/privacy-policy.html">Privacy Policy</a> |
+            <a href="/terms-of-service.html">Terms of Service</a>
+        </nav>
+        <div class="social-links">
+            <a href="https://facebook.com/arcelevenarchitect" aria-label="Facebook">
+                <img src="/images/facebook-icon.svg" alt="Facebook" width="24" height="24">
+            </a>
+            <a href="https://instagram.com/arcelevenarchitect" aria-label="Instagram">
+                <img src="/images/instagram-icon.svg" alt="Instagram" width="24" height="24">
+            </a>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ArchitectureFirm",
+      "name": "ArceEleven Architect",
+      "url": "https://www.arcelevenarchitect.com",
+      "logo": "https://www.arcelevenarchitect.com/images/logo.svg",
+      "sameAs": [
+        "https://www.facebook.com/arcelevenarchitect",
+        "https://www.instagram.com/arcelevenarchitect"
+      ]
+    }
+    </script>
 </body>
 </html>
